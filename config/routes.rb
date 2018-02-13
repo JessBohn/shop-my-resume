@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'skills/index'
+
+  get 'skills/show'
+
   get 'pages/index'
 
   get 'welcome' => 'pages#index'
