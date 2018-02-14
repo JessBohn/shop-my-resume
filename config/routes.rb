@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   get 'welcome' => 'pages#index'
-
+  root 'pages#index'
   get '/skills' => 'skills#index'
   get 'skills/index'
   get 'skills/show'
