@@ -2,15 +2,23 @@
 <html>
   <head>
     <title>ShopMyResume</title>
+    <%= stylesheet_link_tag "application", media: "all" %>
+    <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
     <header>ShopMyResume&trade;</header>
+    <ul class="main-menu">
+      <li class="menu-item">About</li>
+      <li class="menu-item">Skills</li>
+      <li class="menu-item">Projects</li>
+      <li class="menu-item">Reviews</li>
+    </ul>
     <%= yield %>
   </body>
-
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
 </html>
